@@ -18,7 +18,7 @@ class ProductManager {
         photo: data.photo,
         category: data.category,
         price: data.price,
-        stock: data.stock,
+        stock: data.stock
       };
       ProductManager.#products.push(product);
       console.log("Producto cargado");
