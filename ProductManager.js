@@ -1,33 +1,71 @@
 class ProductManager {
   static #products = [];
   create(data) {
-    if (
-      !!data.title &
-      !!data.photo &
-      !!data.category &
-      !!data.price &
-      !!data.stock
-    ) {
-      const product = {
-        id:
-          ProductManager.#products.length === 0
-            ? 1
-            : ProductManager.#products[ProductManager.#products.length - 1].id +
-              1,
-        title: data.title,
-        photo: data.photo,
-        category: data.category,
-        price: data.price,
-        stock: data.stock
-      };
-      ProductManager.#products.push(product);
-      console.log("Producto cargado");
-    } else {
-      console.log("Ingrese todos los datos");
+    try {
+      if (
+        !data.title ||
+        !data.photo ||
+        !data.category ||
+        !data.price ||
+        !data.stock
+      ) {
+        throw new Error("INGRESE TODOS LOS DATOS");
+      } else {
+        const product = {
+          id:
+            ProductManager.#products.length === 0
+              ? 1
+              : ProductManager.#products[ProductManager.#products.length - 1]
+                  .id + 1,
+          title: data.title,
+          photo: data.photo,
+          category: data.category,
+          price: data.price,
+          stock: data.stock,
+        };
+        ProductManager.#products.push(product);
+        console.log("Producto cargado");
+      }
+    } catch (error) {
+      console.log(error);
     }
   }
   read() {
-    return ProductManager.#products;
+    try {
+      if (ProductManager.#products.length === 0) {
+        throw new Error("No hay productos");
+      } else {
+        return ProductManager.#products;
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  }
+  readOne(id) {
+    try {
+      const one = ProductManager.#products.find((each) => each.id === id);
+      if (!one) {
+        throw new Error("No existe ese producto");
+      } else {
+        return one;
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  }
+  destroy(id) {
+    try {
+      this.readOne(id);
+      if (!!this.readOne(id)) {
+        const filtered = ProductManager.#products.filter(
+          (each) => each.id !== id
+        );
+        ProductManager.#products = filtered;
+        console.log("Producto eliminado correctamente");
+      }
+    } catch (error) {
+      console.log(error);
+    }
   }
 }
 
@@ -68,3 +106,7 @@ productsManager.create({
   stock: 10,
 });
 console.log(productsManager.read());
+console.log(productsManager.readOne(2));
+console.log(productsManager.readOne(15));
+productsManager.destroy(1);
+productsManager.destroy(25);
