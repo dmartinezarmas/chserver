@@ -72,6 +72,17 @@ usersManager.create({
   email: "pedrotorres@yahoo.com",
   password: "pedropeter",
 });
+usersManager.create({
+  photo: "img3.png",
+  email: "lic_rodriguez01@yahoo.com",
+  password: "rodri_01",
+});
+usersManager.create({
+  photo: "img4.png",
+  email: "hernandez_adrian@gmail.com",
+  password: "dontgiveup",
+});
+
 console.log(usersManager.read());
 console.log(usersManager.readOne(2));
 console.log(usersManager.readOne(15));

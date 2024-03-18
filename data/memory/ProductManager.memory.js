@@ -105,6 +105,42 @@ productsManager.create({
   price: "300",
   stock: 10,
 });
+productsManager.create({
+  title: "Acolchado Queen size",
+  photo: "acolchadoqueen.png",
+  category: "blancos",
+  price: "500",
+  stock: 14,
+});
+productsManager.create({
+  title: "Smartphone TCL P200",
+  photo: "tcl_p200.png",
+  category: "tecno",
+  price: "1500",
+  stock: 30,
+});
+productsManager.create({
+  title: "Smartphone BGH alpha5",
+  photo: "bgh_alpha5.png",
+  category: "tecno",
+  price: "1300",
+  stock: 50,
+});
+productsManager.create({
+  title: "Balanza de baño smart BGH",
+  photo: "bgh_balanza.png",
+  category: "fashion",
+  price: "380",
+  stock: 8,
+});
+productsManager.create({
+  title: "Rizador de pelo GAMMA",
+  photo: "gamma_rizador.png",
+  category: "fashion",
+  price: "580",
+  stock: 5,
+});
+
 console.log(productsManager.read());
 console.log(productsManager.readOne(2));
 console.log(productsManager.readOne(15));
