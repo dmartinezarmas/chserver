@@ -1,0 +1,23 @@
+[
+  {
+    "id": "cea0f5901bb33b84eac0bfaa",
+    "photo": "diego.png",
+    "email": "diego@msm.com",
+    "password": "ddiieeggoo",
+    "role": 2
+  },
+  {
+    "id": "39f192109f47a018d0950112",
+    "photo": "dariopla.png",
+    "email": "dpla@hotmail.com",
+    "password": "pladario",
+    "role": 1
+  },
+  {
+    "id": "d4010e4d4e17dd7b96347a79",
+    "photo": "manuel.png",
+    "email": "manuelr@msm.com",
+    "password": "roldanm",
+    "role": 2
+  }
+]
