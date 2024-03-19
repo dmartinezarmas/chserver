@@ -1,4 +1,12 @@
 # chserver
+Segunda Entrega curso BackEnd
+A las clases ProductManager y UserManager se agregan los métodos readOne y destroy, para leer un item o eliminarlo respectivamente. Se crean 4 usuarios y 10 productos en memoria.
+Se crean las mismas clases con los mismos métodos pero utilizando persistencia con FileSystem
+Se dejan comentarios para poder probar cada método.
+
+
+
+
 Primer Entrega curso BackEnd
 <<<<<<< HEAD
 
