@@ -1,0 +1,74 @@
+[
+  {
+    "id": "5eeb1b787be6150f3d7b6243",
+    "title": "Secador de pelo",
+    "photo": "https://st2.depositphotos.com/1007168/6106/v/450/depositphotos_61069335-stock-illustration-grey-magnifying-glass.jpg",
+    "category": "fashion",
+    "price": "200",
+    "stock": 20
+  },
+  {
+    "id": "7dd2bb4b4b0cc0b6d4c14175",
+    "title": "Tablet Samsung 10pulg",
+    "photo": "tablet10.png",
+    "category": "tecno",
+    "price": "600",
+    "stock": 12
+  },
+  {
+    "id": "1c8aea4330bd562f5f1fc84f",
+    "title": "Espejo smart LED",
+    "photo": "https://st2.depositphotos.com/1007168/6106/v/450/depositphotos_61069335-stock-illustration-grey-magnifying-glass.jpg",
+    "category": "fashion",
+    "price": "300",
+    "stock": 8
+  },
+  {
+    "id": "9bcf18a44005cc533c98e74e",
+    "title": "Sábanas premium Queen size",
+    "photo": "https://st2.depositphotos.com/1007168/6106/v/450/depositphotos_61069335-stock-illustration-grey-magnifying-glass.jpg",
+    "category": "blancos",
+    "price": "300",
+    "stock": 10
+  },
+  {
+    "id": "292c8eb93a523d8b0bb4ee03",
+    "title": "Acolchado Queen size",
+    "photo": "https://st2.depositphotos.com/1007168/6106/v/450/depositphotos_61069335-stock-illustration-grey-magnifying-glass.jpg",
+    "category": "blancos",
+    "price": "500",
+    "stock": 14
+  },
+  {
+    "id": "ad56cc8a01b08ce17d28ff22",
+    "title": "Smartphone TCL P200",
+    "photo": "tcl_p200.png",
+    "category": "tecno",
+    "price": "1500",
+    "stock": 30
+  },
+  {
+    "id": "ea8aca43463e8addb68ac90c",
+    "title": "Smartphone BGH alpha5",
+    "photo": "bgh_alpha5.png",
+    "category": "tecno",
+    "price": "1300",
+    "stock": 50
+  },
+  {
+    "id": "5a75771bafe91ec72ced63bd",
+    "title": "Balanza de baño smart BGH",
+    "photo": "bgh_balanza.png",
+    "category": "fashion",
+    "price": "380",
+    "stock": 8
+  },
+  {
+    "id": "31f31b92112a943d5a766821",
+    "title": "Rizador de pelo GAMMA",
+    "photo": "gamma_rizador.png",
+    "category": "fashion",
+    "price": "580",
+    "stock": 5
+  }
+]
