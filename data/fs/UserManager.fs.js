@@ -1,5 +1,5 @@
-const fs = require("fs");
-const crypto = require("crypto");
+import fs from "fs";
+import crypto from "crypto";
 
 class UsersManager {
   constructor() {
@@ -11,15 +11,15 @@ class UsersManager {
     if (!existe) {
       const datos = JSON.stringify([], null, 2);
       fs.writeFileSync(this.ruta, datos);
-      console.log("archivo creado");
+      console.log("File created");
     } else {
-      console.log("Archivo ya existe");
+      console.log("File exists");
     }
   }
   async create(data) {
     try {
-      if (!data.email || !data.password || !data.role) {
-        throw new Error("INGRESE TODOS LOS DATOS");
+      if (!data.email) {
+        throw new Error("Write all items");
       } else {
         const user = {
           id: crypto.randomBytes(12).toString("hex"),
@@ -27,32 +27,44 @@ class UsersManager {
             data.photo ||
             "https://pic.onlinewebfonts.com/thumbnails/icons_79265.svg",
           email: data.email,
-          password: data.password,
-          role: data.role,
+          password: data.password || 1234,
+          role: data.role || 0,
         };
         let usuarios = await fs.promises.readFile(this.ruta, "utf-8");
         usuarios = JSON.parse(usuarios);
         usuarios.push(user);
         usuarios = JSON.stringify(usuarios, null, 2);
         await fs.promises.writeFile(this.ruta, usuarios);
-        console.log("Usuario creado");
+        console.log("User created");
         return user;
       }
     } catch (error) {
       console.log(error);
     }
   }
-  async read() {
+  async read(filt) {
     try {
       let usuarios = await fs.promises.readFile(this.ruta, "utf-8");
       usuarios = JSON.parse(usuarios);
-      if (usuarios.length === 0) {
-        console.log("No hay usuarios");
+      if (!filt) {
+        return usuarios;
       } else {
-        console.log("Cantidad de usuarios: " + usuarios.length);
-        console.log(usuarios);
+        const q = usuarios.some((each) => each.role == filt);
+        if (!q) {
+          const error = new Error("Not founded");
+          error.statusCode = 404;
+          throw error;
+        } else {
+          usuarios = usuarios.filter((each) => each.role == filt);
+          if (usuarios.length === 0) {
+            console.log("Not users");
+          } else {
+            console.log("Amount of users: " + usuarios.length);
+            console.log(usuarios);
+          }
+          return usuarios;
+        }
       }
-      return usuarios;
     } catch (error) {
       throw error;
     }
@@ -63,9 +75,9 @@ class UsersManager {
       usuarios = JSON.parse(usuarios);
       let filtered = usuarios.find((each) => each.id === id);
       if (!filtered) {
-        throw new Error("Usuario no encontrado");
+        throw new Error("User not founded");
       } else {
-        console.log("El usuario solicitado es:");
+        console.log("The user is:");
         console.log(filtered);
       }
       return filtered;
@@ -81,9 +93,9 @@ class UsersManager {
       filtered = JSON.stringify(filtered, null, 2);
       let one = usuarios.find((each) => each.id === id);
       if (!one) {
-        throw new Error("Usuario no encontrado");
+        throw new Error("User not founded");
       } else {
-        console.log("Usario eliminado");
+        console.log("User deleted");
         await fs.promises.writeFile(this.ruta, filtered);
       }
       return filtered;
@@ -93,41 +105,44 @@ class UsersManager {
   }
 }
 
-async function prueba() {
-  try {
-    const users = new UsersManager();
-    // users.create({
-    //   photo: "diego.png",
-    //   email: "diego@msm.com",
-    //   password: "ddiieeggoo",
-    //   role: 2,
-    // });
-    //USUARIOS COMENTADOS PARA IR AGREGANDOLOS DE A UNO AL ARCHIVO JSON
-    // users.create({
-    //   photo:"juanito.bmp",
-    //   email: "juan@hotmail.com",
-    //   password: "juanse",
-    //   role: 1,
-    // });
-    // users.create({
-    //   photo: "dariopla.png",
-    //   email: "dpla@hotmail.com",
-    //   password: "pladario",
-    //   role: 1,
-    // });
-    // users.create({
-    //   photo: "manuel.png",
-    //   email: "manuelr@msm.com",
-    //   password: "roldanm",
-    //   role: 2,
-    // });
-    // users.read();
-    // users.readOne("852638cf1a1cbd49") 
-    // Para probar esta función decomentarla y utizilizar un id válido o  uno inválido
-    // users.destroyOne("852638cf1a1cbd498faa")
-    // Para probar esta función decomentarla y utizilizar un id válido o  uno inválido
-  } catch (error) {
-    console.log(error);
-  }
-}
-prueba();
+const usersManager = new UsersManager();
+export default usersManager;
+
+// async function prueba() {
+//   try {
+//     const users = new UsersManager();
+// users.create({
+//   photo: "diego.png",
+//   email: "diego@msm.com",
+//   password: "ddiieeggoo",
+//   role: 2,
+// });
+//USUARIOS COMENTADOS PARA IR AGREGANDOLOS DE A UNO AL ARCHIVO JSON
+// users.create({
+//   photo:"juanito.bmp",
+//   email: "juan@hotmail.com",
+//   password: "juanse",
+//   role: 1,
+// });
+// users.create({
+//   photo: "dariopla.png",
+//   email: "dpla@hotmail.com",
+//   password: "pladario",
+//   role: 1,
+// });
+// users.create({
+//   photo: "manuel.png",
+//   email: "manuelr@msm.com",
+//   password: "roldanm",
+//   role: 2,
+// });
+// users.read();
+// users.readOne("852638cf1a1cbd49")
+// Para probar esta función decomentarla y utizilizar un id válido o  uno inválido
+// users.destroyOne("852638cf1a1cbd498faa")
+// Para probar esta función decomentarla y utizilizar un id válido o  uno inválido
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
+// prueba();
