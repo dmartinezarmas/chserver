@@ -1,0 +1,21 @@
+{
+  "name": "chserver",
+  "version": "1.0.0",
+  "description": "Segunda Entrega curso BackEnd\r A las clases ProductManager y UserManager se agregan los métodos readOne y destroy, para leer un item o eliminarlo respectivamente. Se crean 4 usuarios y 10 productos en memoria.\r Se crean las mismas clases con los mismos métodos pero utilizando persistencia con FileSystem\r Se dejan comentarios para poder probar cada método.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ./data/server.js",
+    "dev": "nodemon ./data/server.js"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
