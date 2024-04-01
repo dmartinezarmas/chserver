@@ -51,7 +51,7 @@ class UsersManager {
       } else {
         const q = usuarios.some((each) => each.role == filt);
         if (!q) {
-          const error = new Error("Not founded");
+          const error = new Error("Not found");
           error.statusCode = 404;
           throw error;
         } else {
@@ -75,7 +75,7 @@ class UsersManager {
       usuarios = JSON.parse(usuarios);
       let filtered = usuarios.find((each) => each.id === id);
       if (!filtered) {
-        throw new Error("User not founded");
+        throw new Error("User not found");
       } else {
         console.log("The user is:");
         console.log(filtered);
@@ -93,7 +93,7 @@ class UsersManager {
       filtered = JSON.stringify(filtered, null, 2);
       let one = usuarios.find((each) => each.id === id);
       if (!one) {
-        throw new Error("User not founded");
+        throw new Error("User not found");
       } else {
         console.log("User deleted");
         await fs.promises.writeFile(this.ruta, filtered);
@@ -107,42 +107,3 @@ class UsersManager {
 
 const usersManager = new UsersManager();
 export default usersManager;
-
-// async function prueba() {
-//   try {
-//     const users = new UsersManager();
-// users.create({
-//   photo: "diego.png",
-//   email: "diego@msm.com",
-//   password: "ddiieeggoo",
-//   role: 2,
-// });
-//USUARIOS COMENTADOS PARA IR AGREGANDOLOS DE A UNO AL ARCHIVO JSON
-// users.create({
-//   photo:"juanito.bmp",
-//   email: "juan@hotmail.com",
-//   password: "juanse",
-//   role: 1,
-// });
-// users.create({
-//   photo: "dariopla.png",
-//   email: "dpla@hotmail.com",
-//   password: "pladario",
-//   role: 1,
-// });
-// users.create({
-//   photo: "manuel.png",
-//   email: "manuelr@msm.com",
-//   password: "roldanm",
-//   role: 2,
-// });
-// users.read();
-// users.readOne("852638cf1a1cbd49")
-// Para probar esta función decomentarla y utizilizar un id válido o  uno inválido
-// users.destroyOne("852638cf1a1cbd498faa")
-// Para probar esta función decomentarla y utizilizar un id válido o  uno inválido
-//   } catch (error) {
-//     console.log(error);
-//   }
-// }
-// prueba();
