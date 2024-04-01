@@ -1,23 +1,44 @@
 [
   {
-    "id": "cea0f5901bb33b84eac0bfaa",
-    "photo": "diego.png",
-    "email": "diego@msm.com",
-    "password": "ddiieeggoo",
-    "role": 2
+    "id": "21e2d9c0a260cf852aaf178c",
+    "photo": "https://pic.onlinewebfonts.com/thumbnails/icons_79265.svg",
+    "email": "diego@gmail.com",
+    "password": "1234",
+    "role": "1"
   },
   {
-    "id": "39f192109f47a018d0950112",
-    "photo": "dariopla.png",
-    "email": "dpla@hotmail.com",
-    "password": "pladario",
-    "role": 1
+    "id": "7cd36670d4d171d1ce4a924b",
+    "photo": "https://pic.onlinewebfonts.com/thumbnails/icons_79265.svg",
+    "email": "carlos@gmail.com",
+    "password": "charly",
+    "role": "2"
   },
   {
-    "id": "d4010e4d4e17dd7b96347a79",
-    "photo": "manuel.png",
-    "email": "manuelr@msm.com",
-    "password": "roldanm",
-    "role": 2
+    "id": "e454be119a86cc9ed4d936c9",
+    "photo": "https://pic.onlinewebfonts.com/thumbnails/icons_79265.svg",
+    "email": "ricardo_d@gmail.com",
+    "password": "qwerty",
+    "role": "2"
+  },
+  {
+    "id": "39529ddba6bdb13b335a0014",
+    "photo": "https://pic.onlinewebfonts.com/thumbnails/icons_79265.svg",
+    "email": "lolo@yahoo.com",
+    "password": "lolo10",
+    "role": "2"
+  },
+  {
+    "id": "7f53835d3dfe2fa8aeab217f",
+    "photo": "https://pic.onlinewebfonts.com/thumbnails/icons_79265.svg",
+    "email": "ñatoq@yahoo.com",
+    "password": "0000",
+    "role": "1"
+  },
+  {
+    "id": "7be1a026dd0cd1be135c46ed",
+    "photo": "https://pic.onlinewebfonts.com/thumbnails/icons_79265.svg",
+    "email": "tatonola@yahoo.com",
+    "password": "0000",
+    "role": "0"
   }
 ]
