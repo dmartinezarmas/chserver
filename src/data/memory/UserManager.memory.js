@@ -2,21 +2,21 @@ class UserManager {
   static #users = [];
   create(data) {
     try {
-      if (!data.photo || !data.email || !data.password) {
-        throw new Error("INGRESE TODOS LOS DATOS");
+      if (!data.email || !data.password) {
+        throw new Error("Write all items");
       } else {
         const user = {
           id:
             UserManager.#users.length === 0
               ? 1
               : UserManager.#users[UserManager.#users.length - 1].id + 1,
-          photo: data.photo,
+          photo: data.photo || "https://pic.onlinewebfonts.com/thumbnails/icons_79265.svg",
           email: data.email,
           password: data.password,
-          role: 0,
+          role: data.role || 0,
         };
         UserManager.#users.push(user);
-        console.log("Producto cargado");
+        console.log("User created");
       }
     } catch (error) {
       console.log(error);
@@ -25,7 +25,7 @@ class UserManager {
   read() {
     try {
       if (UserManager.#users.length === 0) {
-        throw new Error("No hay usuarios");
+        throw new Error("Not users");
       } else {
         return UserManager.#users;
       }
@@ -37,7 +37,7 @@ class UserManager {
     try {
       const one = UserManager.#users.find((each) => each.id === id);
       if (!one) {
-        throw new Error("No existe ese usuario");
+        throw new Error("Not found");
       } else {
         return one;
       }
@@ -51,9 +51,9 @@ class UserManager {
       if (!!this.readOne(id)) {
         const filtered = UserManager.#users.filter((each) => each.id !== id);
         UserManager.#users = filtered;
-        console.log("Usuario eliminado correctamente");
+        console.log("User deleted");
       } else {
-        console.log("Usuario inexistente");
+        console.log("User not found");
       }
     } catch (error) {
       console.log(error);

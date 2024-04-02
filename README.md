@@ -1,16 +1,4 @@
 # chserver
-
-Tercer entrega curso BackEnd
-Se crea un servidor express, se configura y se crean las rutas para:
-- Leer todos los Pruductos y Usuarios
-- Leer un producto y/o usuario por ID
-- Leer un producto y/o usuario por categoria y rol respectivamente
-- Crear un producto y/o usuario
-- Filtrar productos y/o usuarios por categoria y rol respectivamente
-- Se manejan los errores para cuando no hay productos y/o usuarios, y para cuando no existe la cateogoría o el rol respectivamente.
-- Se dejan comentarios para separar cada seccion en el server (Usuarios y Productos)
-
-
 Segunda Entrega curso BackEnd
 A las clases ProductManager y UserManager se agregan los métodos readOne y destroy, para leer un item o eliminarlo respectivamente. Se crean 4 usuarios y 10 productos en memoria.
 Se crean las mismas clases con los mismos métodos pero utilizando persistencia con FileSystem
