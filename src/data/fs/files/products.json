@@ -1,26 +1,50 @@
 [
   {
-    "id": "2bd76e8432a4151b3177cdf7",
-    "title": "Smartphone LG Alpha X",
-    "photo": "LG.jpeg",
+    "id": "2bd76e8432a4151b3177zdf4",
+    "title": "Smartphone moto E1",
+    "photo": "MotoE1.jpeg",
     "category": "tecno",
-    "price": "2600",
-    "stock": "16"
+    "price": "1900",
+    "stock": "12"
   },
   {
-    "id": "2bd76e8432a4151b3177cdp7",
-    "title": "Smartphone HTC Neo10",
-    "photo": "HTC.jpeg",
+    "id": "2bd76e8432a4151b3177iuf1",
+    "title": "Smartphone HTC Black X",
+    "photo": "HTCBlackX.jpeg",
     "category": "tecno",
-    "price": "2000",
-    "stock": "4"
+    "price": "3000",
+    "stock": "8"
+  },
+  {
+    "id": "2bd76e8432a4151b3177cdx5",
+    "title": "Smartphone HTC Black A",
+    "photo": "HTCBlackA.jpeg",
+    "category": "tecno",
+    "price": "2500",
+    "stock": "10"
+  },
+  {
+    "id": "2bd90e8432a4151b3177cdf1",
+    "title": "Smartphone Samsung Galaxy mil",
+    "photo": "GalaxyMil.jpeg",
+    "category": "tecno",
+    "price": "5000",
+    "stock": "50"
+  },
+  {
+    "id": "2bd76e8432a4151b3177atf1",
+    "title": "Smartphone BGH Beta 3",
+    "photo": "BGHBeta3.jpeg",
+    "category": "tecno",
+    "price": "1200",
+    "stock": "125"
   },
   {
     "id": "2bd76e8432a4151b3177cdf1",
     "title": "Smartphone moto G30",
     "photo": "Moto.jpeg",
     "category": "tecno",
-    "price": "2300",
+    "price": "3500",
     "stock": "12"
   },
   {
@@ -158,5 +182,149 @@
     "category": "tecno",
     "price": "129",
     "stock": "9"
+  },
+  {
+    "id": "3qdaf77c76164c5b6683761a",
+    "title": "Smartwatch AlphaTwo",
+    "photo": "smartwatchTwo.png",
+    "category": "tecno",
+    "price": "135",
+    "stock": "4"
+  },
+  {
+    "id": "3pdaf77c76164c5b6683761b",
+    "title": "Smartwatch AlphaFour",
+    "photo": "smartwatchFour.png",
+    "category": "tecno",
+    "price": "145",
+    "stock": "5"
+  },
+  {
+    "id": "3odaf77c76164c5b6683761c",
+    "title": "Smartwatch AlphaFive",
+    "photo": "smartwatchFive.png",
+    "category": "tecno",
+    "price": "150",
+    "stock": "4"
+  },
+  {
+    "id": "3ndaf77c76164c5b6683761d",
+    "title": "Smartwatch AlphaSix",
+    "photo": "smartwatchSix.png",
+    "category": "tecno",
+    "price": "152",
+    "stock": "9"
+  },
+  {
+    "id": "3mdaf77c76164c5b6683761e",
+    "title": "Smartwatch AlphaSeven",
+    "photo": "smartwatchSeven.png",
+    "category": "tecno",
+    "price": "158",
+    "stock": "6"
+  },
+  {
+    "id": "3ldaf77c76164c5b6683761f",
+    "title": "Smartwatch Neo A",
+    "photo": "smartwatchNeoA.png",
+    "category": "tecno",
+    "price": "40",
+    "stock": "29"
+  },
+  {
+    "id": "3kdaf77c76164c5b6683761g",
+    "title": "Smartwatch Neo B",
+    "photo": "smartwatchNeoB.png",
+    "category": "tecno",
+    "price": "49",
+    "stock": "30"
+  },
+  {
+    "id": "3jdaf77c76164c5b6683761h",
+    "title": "Smartwatch Neo C",
+    "photo": "smartwatch.png",
+    "category": "tecno",
+    "price": "55",
+    "stock": "42"
+  },
+  {
+    "id": "3idaf77c76164c5b6683761i",
+    "title": "Smartwatch Neo D",
+    "photo": "smartwatchNeoD.png",
+    "category": "tecno",
+    "price": "45",
+    "stock": "89"
+  },
+  {
+    "id": "3hdaf77c76164c5b6683761j",
+    "title": "Smartwatch Neo Z",
+    "photo": "smartwatchNeoZ.png",
+    "category": "tecno",
+    "price": "99",
+    "stock": "95"
+  },
+  {
+    "id": "9bcf18a44005cc533c98g81e",
+    "title": "Sábanas microfibra Queen blue",
+    "photo": "https://st2.depositphotos.com/1007168/6106/v/450/depositphotos_61069335-stock-illustration-grey-magnifying-glass.jpg",
+    "category": "blancos",
+    "price": "80",
+    "stock": "100"
+  },
+  {
+    "id": "3gdaf77c76164c5b6683761k",
+    "title": "Sábanas microfibra Queen green",
+    "photo": "https://st2.depositphotos.com/1007168/6106/v/450/depositphotos_61069335-stock-illustration-grey-magnifying-glass.jpg",
+    "category": "blancos",
+    "price": "80",
+    "stock": "100"
+  },
+  {
+    "id": "3fdaf77c76164c5b6683761l",
+    "title": "Sábanas microfibra Queen red",
+    "photo": "https://st2.depositphotos.com/1007168/6106/v/450/depositphotos_61069335-stock-illustration-grey-magnifying-glass.jpg",
+    "category": "blancos",
+    "price": "80",
+    "stock": "100"
+  },
+  {
+    "id": "3edaf77c76164c5b6683761m",
+    "title": "Sábanas microfibra Queen violet",
+    "photo": "https://st2.depositphotos.com/1007168/6106/v/450/depositphotos_61069335-stock-illustration-grey-magnifying-glass.jpg",
+    "category": "blancos",
+    "price": "80",
+    "stock": "120"
+  },
+  {
+    "id": "3ddaf77c76164c5b6683761n",
+    "title": "Sábanas microfibra Queen pink",
+    "photo": "https://st2.depositphotos.com/1007168/6106/v/450/depositphotos_61069335-stock-illustration-grey-magnifying-glass.jpg",
+    "category": "blancos",
+    "price": "80",
+    "stock": "110"
+  },
+  {
+    "id": "3cdaf77c76164c5b6683761o",
+    "title": "Sábanas microfibra Queen grgreyeen",
+    "photo": "https://st2.depositphotos.com/1007168/6106/v/450/depositphotos_61069335-stock-illustration-grey-magnifying-glass.jpg",
+    "category": "blancos",
+    "price": "80",
+    "stock": "130"
+  },
+  {
+    "id": "3bdaf77c76164c5b6683761p",
+    "title": "Sábanas microfibra Queen black",
+    "photo": "https://st2.depositphotos.com/1007168/6106/v/450/depositphotos_61069335-stock-illustration-grey-magnifying-glass.jpg",
+    "category": "blancos",
+    "price": "80",
+    "stock": "180"
+  },
+  {
+    "id": "bdb4f50e4844bfeba194aa0f",
+    "title": "Sábanas microfibra Queen purple",
+    "photo": "https://st2.depositphotos.com/1007168/6106/v/450/depositphotos_61069335-stock-illustration-grey-magnifying-glass.jpg",
+    "category": "blancos",
+    "price": "80",
+    "stock": "1"
   }
 ]

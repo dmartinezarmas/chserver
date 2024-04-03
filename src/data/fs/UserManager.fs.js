@@ -28,7 +28,7 @@ class UsersManager {
             "https://pic.onlinewebfonts.com/thumbnails/icons_79265.svg",
           email: data.email,
           password: data.password,
-          role: data.role || 0,
+          role: data.role || "0",
         };
         let usuarios = await fs.promises.readFile(this.ruta, "utf-8");
         usuarios = JSON.parse(usuarios);
@@ -56,12 +56,8 @@ class UsersManager {
           throw error;
         } else {
           usuarios = usuarios.filter((each) => each.role == filt);
-          if (usuarios.length === 0) {
-            console.log("Not users");
-          } else {
-            console.log("Amount of users: " + usuarios.length);
-            console.log(usuarios);
-          }
+          console.log("Amount of users: " + usuarios.length);
+          console.log(usuarios);
           return usuarios;
         }
       }
@@ -112,7 +108,7 @@ class UsersManager {
           one[prop] = data[prop]
         }
         all = JSON.stringify(all, null, 2)
-        await fs.promises.writeFile(this.path, all)
+        await fs.promises.writeFile(this.ruta, all)
         return one
       } else {
         const error = new Error("Not found")

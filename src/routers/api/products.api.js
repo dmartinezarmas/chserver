@@ -5,22 +5,23 @@ const productsRouter = Router();
 
 // PRODUCTS ROUTES
 // crear productos nuevos
-const createProduct = async (req, res, next) => {
+async function createProduct(req, res, next) {
   try {
     const data = req.body;
     const one = await productsManager.create(data);
     return res.json({
       statusCode: 201,
+      response: one.id,
       message: "Created ID: " + one.id,
     });
   } catch (error) {
-    return next (error)
+    return next(error);
   }
-};
+}
 productsRouter.post("/", createProduct);
 
 // leer todos los productos y filtrar por category
-const readProducts = async (req, res, next) => {
+async function readProducts(req, res, next) {
   try {
     const { category } = req.query;
     const all = await productsManager.read(category);
@@ -36,13 +37,13 @@ const readProducts = async (req, res, next) => {
       throw error;
     }
   } catch (error) {
-    return next (error)
+    return next(error);
   }
-};
+}
 productsRouter.get("/", readProducts);
 
 // buscar y leer productos por ID
-const readOneProduct = async (req, res, next) => {
+async function readOneProduct(req, res, next) {
   try {
     const { pid } = req.params;
     const one = await productsManager.readOne(pid);
@@ -57,29 +58,29 @@ const readOneProduct = async (req, res, next) => {
       throw error;
     }
   } catch (error) {
-    return next (error)
+    return next(error);
   }
-};
+}
 productsRouter.get("/:pid", readOneProduct);
 
 // actualizar producto
-const updateProduct = async (req, res, next) => {
+async function updateProduct(req, res, next) {
   try {
     const { pid } = req.params;
     const data = req.body;
-    const one = await usersProduct.update(pid, data);
+    const one = await productsManager.update(pid, data);
     return res.json({
       statusCode: 200,
       response: one,
     });
   } catch (error) {
-    return next (error)
+    return next(error);
   }
-};
+}
 productsRouter.put("/:pid", updateProduct);
 
 // eliminar producto
-const destroyProduct = async (req, res, next) => {
+async function destroyProduct(req, res, next) {
   try {
     const { pid } = req.params;
     const one = await productsManager.destroyOne(pid);
@@ -88,9 +89,9 @@ const destroyProduct = async (req, res, next) => {
       response: one,
     });
   } catch (error) {
-    return next (error)
+    return next(error);
   }
-};
+}
 productsRouter.delete("/:pid", destroyProduct);
 
 export default productsRouter;

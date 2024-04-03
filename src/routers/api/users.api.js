@@ -11,6 +11,7 @@ const createUser = async (req, res, next) => {
     const one = await usersManager.create(data);
     return res.json({
       statusCode: 201,
+      response: one.id,
       message: "Created ID: " + one.id,
     });
   } catch (error) {

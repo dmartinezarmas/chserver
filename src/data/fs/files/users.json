@@ -4,7 +4,7 @@
     "photo": "https://pic.onlinewebfonts.com/thumbnails/icons_79265.svg",
     "email": "diego@gmail.com",
     "password": "1234",
-    "role": "1"
+    "role": "5"
   },
   {
     "id": "7cd36670d4d171d1ce4a924b",
@@ -35,10 +35,10 @@
     "role": "1"
   },
   {
-    "id": "7be1a026dd0cd1be135c46ed",
+    "id": "6e0809f870efd6d3d8fe6f0f",
     "photo": "https://pic.onlinewebfonts.com/thumbnails/icons_79265.svg",
-    "email": "tatonola@yahoo.com",
-    "password": "0000",
+    "email": "valentina@yahoo.com",
+    "password": "valentinaMartinezMoreno",
     "role": "0"
   }
 ]
