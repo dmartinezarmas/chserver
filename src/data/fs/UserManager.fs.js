@@ -3,7 +3,7 @@ import crypto from "crypto";
 
 class UsersManager {
   constructor() {
-    this.ruta = "./data/fs/files/users.json";
+    this.ruta = "./src/data/fs/files/users.json";
     this.init();
   }
   init() {
@@ -18,7 +18,7 @@ class UsersManager {
   }
   async create(data) {
     try {
-      if (!data.email) {
+      if (!data.email || !data.password) {
         throw new Error("Write all items");
       } else {
         const user = {
@@ -27,8 +27,8 @@ class UsersManager {
             data.photo ||
             "https://pic.onlinewebfonts.com/thumbnails/icons_79265.svg",
           email: data.email,
-          password: data.password || 1234,
-          role: data.role || 0,
+          password: data.password,
+          role: data.role || "0",
         };
         let usuarios = await fs.promises.readFile(this.ruta, "utf-8");
         usuarios = JSON.parse(usuarios);
@@ -56,12 +56,8 @@ class UsersManager {
           throw error;
         } else {
           usuarios = usuarios.filter((each) => each.role == filt);
-          if (usuarios.length === 0) {
-            console.log("Not users");
-          } else {
-            console.log("Amount of users: " + usuarios.length);
-            console.log(usuarios);
-          }
+          console.log("Amount of users: " + usuarios.length);
+          console.log(usuarios);
           return usuarios;
         }
       }
@@ -103,7 +99,28 @@ class UsersManager {
       throw error;
     }
   }
+  async update(id, data){
+    try {
+      let all =  await this.read()
+      let one = all.find((each) => each.id === id)
+      if (one) {
+        for (let prop in data){
+          one[prop] = data[prop]
+        }
+        all = JSON.stringify(all, null, 2)
+        await fs.promises.writeFile(this.ruta, all)
+        return one
+      } else {
+        const error = new Error("Not found")
+        error.statusCode = 404
+        throw error
+      }
+    } catch (error) {
+      throw error;
+    }
+  }
 }
 
 const usersManager = new UsersManager();
 export default usersManager;
+

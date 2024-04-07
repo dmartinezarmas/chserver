@@ -3,7 +3,7 @@ import crypto from "crypto";
 
 class ProductsManager {
   constructor() {
-    this.ruta = "./data/fs/files/products.json";
+    this.ruta = "./src/data/fs/files/products.json";
     this.init();
   }
   init() {
@@ -18,8 +18,8 @@ class ProductsManager {
   }
   async create(data) {
     try {
-      if (!data.title || !data.category || !data.price || !data.stock) {
-        throw new Error("Write all items");
+      if (!data.title) {
+        throw new Error("Write title");
       } else {
         const product = {
           id: crypto.randomBytes(12).toString("hex"),
@@ -27,9 +27,9 @@ class ProductsManager {
           photo:
             data.photo ||
             "https://st2.depositphotos.com/1007168/6106/v/450/depositphotos_61069335-stock-illustration-grey-magnifying-glass.jpg",
-          category: data.category,
-          price: data.price,
-          stock: data.stock,
+          category: data.category || "other",
+          price: data.price || "1",
+          stock: data.stock || "1",
         };
         let productos = await fs.promises.readFile(this.ruta, "utf-8");
         productos = JSON.parse(productos);
@@ -57,12 +57,8 @@ class ProductsManager {
           throw error;
         } else {
           productos = productos.filter((each) => each.category == filt);
-          if (productos.length === 0) {
-            console.log("Not products");
-          } else {
-            console.log("Amount of products: " + productos.length);
-            console.log(productos);
-          }
+          console.log("Amount of products: " + productos.length);
+          console.log(productos);
           return productos;
         }
       }
@@ -100,6 +96,26 @@ class ProductsManager {
         await fs.promises.writeFile(this.ruta, filtered);
       }
       return filtered;
+    } catch (error) {
+      throw error;
+    }
+  }
+  async update(id, data) {
+    try {
+      let all = await this.read();
+      let one = all.find((each) => each.id === id);
+      if (one) {
+        for (let prop in data) {
+          one[prop] = data[prop];
+        }
+        all = JSON.stringify(all, null, 2);
+        await fs.promises.writeFile(this.ruta, all);
+        return one;
+      } else {
+        const error = new Error("Not found");
+        error.statusCode = 404;
+        throw error;
+      }
     } catch (error) {
       throw error;
     }

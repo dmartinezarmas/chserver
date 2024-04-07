@@ -1,15 +1,19 @@
 # chserver
+Challenge 1 - Cuarta entrega curso BackEnd:
+Se configura servidor express y enrutador y rutas especificas para usuarios y productos.
+Se crea metodo update y se configuran respuestas json para la configuración del API REST.
+Se maneja errores con errorHandler y pathHandler
+Se realizan pruebas con postman para cada método que adicionalmente a los anteriores se incluye el método update.
 
-Tercer entrega curso BackEnd
-Se crea un servidor express, se configura y se crean las rutas para:
-- Leer todos los Pruductos y Usuarios
-- Leer un producto y/o usuario por ID
-- Leer un producto y/o usuario por categoria y rol respectivamente
-- Crear un producto y/o usuario
-- Filtrar productos y/o usuarios por categoria y rol respectivamente
-- Se manejan los errores para cuando no hay productos y/o usuarios, y para cuando no existe la cateogoría o el rol respectivamente.
-- Se dejan comentarios para separar cada seccion en el server (Usuarios y Productos)
 
+Tercer entrega curso BackEnd Se crea un servidor express, se configura y se crean las rutas para:
+Leer todos los Pruductos y Usuarios
+Leer un producto y/o usuario por ID
+Leer un producto y/o usuario por categoria y rol respectivamente
+Crear un producto y/o usuario
+Filtrar productos y/o usuarios por categoria y rol respectivamente
+Se manejan los errores para cuando no hay productos y/o usuarios, y para cuando no existe la cateogoría o el rol respectivamente.
+Se dejan comentarios para separar cada seccion en el server (Usuarios y Productos)
 
 Segunda Entrega curso BackEnd
 A las clases ProductManager y UserManager se agregan los métodos readOne y destroy, para leer un item o eliminarlo respectivamente. Se crean 4 usuarios y 10 productos en memoria.

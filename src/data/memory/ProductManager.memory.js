@@ -2,14 +2,8 @@ class ProductManager {
   static #products = [];
   create(data) {
     try {
-      if (
-        !data.title ||
-        !data.photo ||
-        !data.category ||
-        !data.price ||
-        !data.stock
-      ) {
-        throw new Error("INGRESE TODOS LOS DATOS");
+      if (!data.title) {
+        throw new Error("Write title");
       } else {
         const product = {
           id:
@@ -18,13 +12,13 @@ class ProductManager {
               : ProductManager.#products[ProductManager.#products.length - 1]
                   .id + 1,
           title: data.title,
-          photo: data.photo,
-          category: data.category,
-          price: data.price,
-          stock: data.stock,
+          photo: data.photo || "https://st2.depositphotos.com/1007168/6106/v/450/depositphotos_61069335-stock-illustration-grey-magnifying-glass.jpg",
+          category: data.category || "other",
+          price: data.price || 1,
+          stock: data.stock || 1,
         };
         ProductManager.#products.push(product);
-        console.log("Producto cargado");
+        console.log("Product created");
       }
     } catch (error) {
       console.log(error);
@@ -33,7 +27,7 @@ class ProductManager {
   read() {
     try {
       if (ProductManager.#products.length === 0) {
-        throw new Error("No hay productos");
+        throw new Error("Not products");
       } else {
         return ProductManager.#products;
       }
@@ -45,7 +39,7 @@ class ProductManager {
     try {
       const one = ProductManager.#products.find((each) => each.id === id);
       if (!one) {
-        throw new Error("No existe ese producto");
+        throw new Error("Not found");
       } else {
         return one;
       }
@@ -61,7 +55,7 @@ class ProductManager {
           (each) => each.id !== id
         );
         ProductManager.#products = filtered;
-        console.log("Producto eliminado correctamente");
+        console.log("Product deleted");
       }
     } catch (error) {
       console.log(error);

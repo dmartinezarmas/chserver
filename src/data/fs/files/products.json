@@ -1,0 +1,330 @@
+[
+  {
+    "id": "2bd76e8432a4151b3177zdf4",
+    "title": "Smartphone moto E1",
+    "photo": "MotoE1.jpeg",
+    "category": "tecno",
+    "price": "1900",
+    "stock": "12"
+  },
+  {
+    "id": "2bd76e8432a4151b3177iuf1",
+    "title": "Smartphone HTC Black X",
+    "photo": "HTCBlackX.jpeg",
+    "category": "tecno",
+    "price": "3000",
+    "stock": "8"
+  },
+  {
+    "id": "2bd76e8432a4151b3177cdx5",
+    "title": "Smartphone HTC Black A",
+    "photo": "HTCBlackA.jpeg",
+    "category": "tecno",
+    "price": "2500",
+    "stock": "10"
+  },
+  {
+    "id": "2bd90e8432a4151b3177cdf1",
+    "title": "Smartphone Samsung Galaxy mil",
+    "photo": "GalaxyMil.jpeg",
+    "category": "tecno",
+    "price": "5000",
+    "stock": "50"
+  },
+  {
+    "id": "2bd76e8432a4151b3177atf1",
+    "title": "Smartphone BGH Beta 3",
+    "photo": "BGHBeta3.jpeg",
+    "category": "tecno",
+    "price": "1200",
+    "stock": "125"
+  },
+  {
+    "id": "2bd76e8432a4151b3177cdf1",
+    "title": "Smartphone moto G30",
+    "photo": "Moto.jpeg",
+    "category": "tecno",
+    "price": "3500",
+    "stock": "12"
+  },
+  {
+    "id": "5eeb1b787be6150f3d7b6243",
+    "title": "Secador de pelo",
+    "photo": "https://st2.depositphotos.com/1007168/6106/v/450/depositphotos_61069335-stock-illustration-grey-magnifying-glass.jpg",
+    "category": "fashion",
+    "price": "200",
+    "stock": "20"
+  },
+  {
+    "id": "7dd2bb4b4b0cc0b6d4c14175",
+    "title": "Tablet Samsung 10pulg",
+    "photo": "tablet10.png",
+    "category": "tecno",
+    "price": "600",
+    "stock": "12"
+  },
+  {
+    "id": "1c8aea4330bd562f5f1fc84f",
+    "title": "Espejo smart LED",
+    "photo": "https://st2.depositphotos.com/1007168/6106/v/450/depositphotos_61069335-stock-illustration-grey-magnifying-glass.jpg",
+    "category": "fashion",
+    "price": "300",
+    "stock": "8"
+  },
+  {
+    "id": "9bcf18a44005cc533c98e74e",
+    "title": "Sábanas premium Queen size",
+    "photo": "https://st2.depositphotos.com/1007168/6106/v/450/depositphotos_61069335-stock-illustration-grey-magnifying-glass.jpg",
+    "category": "blancos",
+    "price": "300",
+    "stock": "10"
+  },
+  {
+    "id": "292c8eb93a523p8b0bb4ee03",
+    "title": "Acolchado Queen size",
+    "photo": "https://st2.depositphotos.com/1007168/6106/v/450/depositphotos_61069335-stock-illustration-grey-magnifying-glass.jpg",
+    "category": "blancos",
+    "price": "500",
+    "stock": "14"
+  },
+  {
+    "id": "292c8eb93a523d8b0bb4ee07",
+    "title": "Acolchado Twin size",
+    "photo": "https://st2.depositphotos.com/1007168/6106/v/450/depositphotos_61069335-stock-illustration-grey-magnifying-glass.jpg",
+    "category": "blancos",
+    "price": "420",
+    "stock": "11"
+  },
+  {
+    "id": "292c8eb93a523d8b0bb4be13",
+    "title": "Sabanas Twin size",
+    "photo": "https://st2.depositphotos.com/1007168/6106/v/450/depositphotos_61069335-stock-illustration-grey-magnifying-glass.jpg",
+    "category": "blancos",
+    "price": "180",
+    "stock": "24"
+  },
+  {
+    "id": "292c8eb93a523d8b0bb4ae53",
+    "title": "Cortinas premium",
+    "photo": "https://st2.depositphotos.com/1007168/6106/v/450/depositphotos_61069335-stock-illustration-grey-magnifying-glass.jpg",
+    "category": "blancos",
+    "price": "150",
+    "stock": "19"
+  },
+  {
+    "id": "292c8eb93a523d8b0bz4ee03",
+    "title": "Cubrecamas queen size",
+    "photo": "https://st2.depositphotos.com/1007168/6106/v/450/depositphotos_61069335-stock-illustration-grey-magnifying-glass.jpg",
+    "category": "blancos",
+    "price": "190",
+    "stock": "14"
+  },
+  {
+    "id": "292c8eb93q523d8b0bb4ee03",
+    "title": "Cubrecamas twin size",
+    "photo": "https://st2.depositphotos.com/1007168/6106/v/450/depositphotos_61069335-stock-illustration-grey-magnifying-glass.jpg",
+    "category": "blancos",
+    "price": "182",
+    "stock": "16"
+  },
+  {
+    "id": "292c8eb93a523x8b0bb4ee03",
+    "title": "Cubremacas King size",
+    "photo": "https://st2.depositphotos.com/1007168/6106/v/450/depositphotos_61069335-stock-illustration-grey-magnifying-glass.jpg",
+    "category": "blancos",
+    "price": "198",
+    "stock": "14"
+  },
+  {
+    "id": "ad56cc8a01b08ce17d28ff22",
+    "title": "Smartphone TCL P200",
+    "photo": "tcl_p200.png",
+    "category": "tecno",
+    "price": "1500",
+    "stock": "30"
+  },
+  {
+    "id": "ea8aca43463e8addb68ac90c",
+    "title": "Smartphone BGH alpha5",
+    "photo": "bgh_alpha5.png",
+    "category": "tecno",
+    "price": "1300",
+    "stock": "50"
+  },
+  {
+    "id": "5a75771bafe91ec72ced63bd",
+    "title": "Balanza de baño smart BGH",
+    "photo": "bgh_balanza.png",
+    "category": "fashion",
+    "price": "380",
+    "stock": "8"
+  },
+  {
+    "id": "31f31b92112a943d5a766821",
+    "title": "Rizador de pelo GAMMA",
+    "photo": "gamma_rizador.png",
+    "category": "fashion",
+    "price": "580",
+    "stock": "5"
+  },
+  {
+    "id": "ef54823f9bc3fe68bce380b8",
+    "title": "Reloj despertador LED",
+    "photo": "relojLed.png",
+    "category": "tecno",
+    "price": "85",
+    "stock": "2"
+  },
+  {
+    "id": "3adaf77c76164c5b6683761d",
+    "title": "Smartwatch AlphaOne",
+    "photo": "smartwatch.png",
+    "category": "tecno",
+    "price": "129",
+    "stock": "9"
+  },
+  {
+    "id": "3qdaf77c76164c5b6683761a",
+    "title": "Smartwatch AlphaTwo",
+    "photo": "smartwatchTwo.png",
+    "category": "tecno",
+    "price": "135",
+    "stock": "4"
+  },
+  {
+    "id": "3pdaf77c76164c5b6683761b",
+    "title": "Smartwatch AlphaFour",
+    "photo": "smartwatchFour.png",
+    "category": "tecno",
+    "price": "145",
+    "stock": "5"
+  },
+  {
+    "id": "3odaf77c76164c5b6683761c",
+    "title": "Smartwatch AlphaFive",
+    "photo": "smartwatchFive.png",
+    "category": "tecno",
+    "price": "150",
+    "stock": "4"
+  },
+  {
+    "id": "3ndaf77c76164c5b6683761d",
+    "title": "Smartwatch AlphaSix",
+    "photo": "smartwatchSix.png",
+    "category": "tecno",
+    "price": "152",
+    "stock": "9"
+  },
+  {
+    "id": "3mdaf77c76164c5b6683761e",
+    "title": "Smartwatch AlphaSeven",
+    "photo": "smartwatchSeven.png",
+    "category": "tecno",
+    "price": "158",
+    "stock": "6"
+  },
+  {
+    "id": "3ldaf77c76164c5b6683761f",
+    "title": "Smartwatch Neo A",
+    "photo": "smartwatchNeoA.png",
+    "category": "tecno",
+    "price": "40",
+    "stock": "29"
+  },
+  {
+    "id": "3kdaf77c76164c5b6683761g",
+    "title": "Smartwatch Neo B",
+    "photo": "smartwatchNeoB.png",
+    "category": "tecno",
+    "price": "49",
+    "stock": "30"
+  },
+  {
+    "id": "3jdaf77c76164c5b6683761h",
+    "title": "Smartwatch Neo C",
+    "photo": "smartwatch.png",
+    "category": "tecno",
+    "price": "55",
+    "stock": "42"
+  },
+  {
+    "id": "3idaf77c76164c5b6683761i",
+    "title": "Smartwatch Neo D",
+    "photo": "smartwatchNeoD.png",
+    "category": "tecno",
+    "price": "45",
+    "stock": "89"
+  },
+  {
+    "id": "3hdaf77c76164c5b6683761j",
+    "title": "Smartwatch Neo Z",
+    "photo": "smartwatchNeoZ.png",
+    "category": "tecno",
+    "price": "99",
+    "stock": "95"
+  },
+  {
+    "id": "9bcf18a44005cc533c98g81e",
+    "title": "Sábanas microfibra Queen blue",
+    "photo": "https://st2.depositphotos.com/1007168/6106/v/450/depositphotos_61069335-stock-illustration-grey-magnifying-glass.jpg",
+    "category": "blancos",
+    "price": "80",
+    "stock": "100"
+  },
+  {
+    "id": "3gdaf77c76164c5b6683761k",
+    "title": "Sábanas microfibra Queen green",
+    "photo": "https://st2.depositphotos.com/1007168/6106/v/450/depositphotos_61069335-stock-illustration-grey-magnifying-glass.jpg",
+    "category": "blancos",
+    "price": "80",
+    "stock": "100"
+  },
+  {
+    "id": "3fdaf77c76164c5b6683761l",
+    "title": "Sábanas microfibra Queen red",
+    "photo": "https://st2.depositphotos.com/1007168/6106/v/450/depositphotos_61069335-stock-illustration-grey-magnifying-glass.jpg",
+    "category": "blancos",
+    "price": "80",
+    "stock": "100"
+  },
+  {
+    "id": "3edaf77c76164c5b6683761m",
+    "title": "Sábanas microfibra Queen violet",
+    "photo": "https://st2.depositphotos.com/1007168/6106/v/450/depositphotos_61069335-stock-illustration-grey-magnifying-glass.jpg",
+    "category": "blancos",
+    "price": "80",
+    "stock": "120"
+  },
+  {
+    "id": "3ddaf77c76164c5b6683761n",
+    "title": "Sábanas microfibra Queen pink",
+    "photo": "https://st2.depositphotos.com/1007168/6106/v/450/depositphotos_61069335-stock-illustration-grey-magnifying-glass.jpg",
+    "category": "blancos",
+    "price": "80",
+    "stock": "110"
+  },
+  {
+    "id": "3cdaf77c76164c5b6683761o",
+    "title": "Sábanas microfibra Queen grgreyeen",
+    "photo": "https://st2.depositphotos.com/1007168/6106/v/450/depositphotos_61069335-stock-illustration-grey-magnifying-glass.jpg",
+    "category": "blancos",
+    "price": "80",
+    "stock": "130"
+  },
+  {
+    "id": "3bdaf77c76164c5b6683761p",
+    "title": "Sábanas microfibra Queen black",
+    "photo": "https://st2.depositphotos.com/1007168/6106/v/450/depositphotos_61069335-stock-illustration-grey-magnifying-glass.jpg",
+    "category": "blancos",
+    "price": "80",
+    "stock": "180"
+  },
+  {
+    "id": "bdb4f50e4844bfeba194aa0f",
+    "title": "Sábanas microfibra Queen purple",
+    "photo": "https://st2.depositphotos.com/1007168/6106/v/450/depositphotos_61069335-stock-illustration-grey-magnifying-glass.jpg",
+    "category": "blancos",
+    "price": "80",
+    "stock": "1"
+  }
+]
