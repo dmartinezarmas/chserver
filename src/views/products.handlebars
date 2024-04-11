@@ -1,0 +1,12 @@
+<h1 class="text-center bg-danger text-light p-3">PRODUCTS</h1>
+<div class="d-flex flex-wrap m-2 text-center justify-content-center">
+{{#each products}}
+  <a class="m-5 w-25 bg-dark rounded-4 bg-success p-2 text-decoration-none" style="--bs-bg-opacity: .2" href="/products/{{this.id}}">
+    <h2 class="text-dark">{{this.title}}</h2>
+    <img class="w-100 p-2" src="{{this.photo}}" alt="{{this.title}}">
+    <p>{{this.id}}</p>
+  </a>
+
+{{/each}}
+</div>
+

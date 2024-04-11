@@ -1,0 +1,44 @@
+<h1 class="text-center bg-danger text-light p-3">PRODUCTS</h1>
+<section class="d-flex">
+    <article id="register" class="w-50 text-center">
+        <h2>Register A New Product</h2>   
+        <form class="d-flex flex-column align-items-center" action="">
+            <input class="m-2" placeholder="Title" type="text" name="title" id="title">
+            <input class="m-2" placeholder="Category" type="text" name="" id="category">
+            <input class="m-2" placeholder="Photo" type="text" name="photo" id="photo">
+            <input class="m-2" placeholder="Price" type="number" name="price" id="price">
+            <input class="m-2" placeholder="Stock" type="number" name="stock" id="stock">
+            <input class="btn btn-primary" type="button" value="Register" id="btnRegister">
+        </form>
+    </article>
+    <article id="products" class="d-flex flex-wrap-reverse w-50"></article>
+</section>
+<script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+<script>
+    const socket = io()
+    socket.on("products", data => {
+        console.log(data)
+        let template = ``
+        template = data.map(each => 
+        `
+            <div class="card text-center m-2" style="width: 18rem;">
+                <img src="${each.photo}" class="card-img-top w-100 h-50 object-fit-contain" alt="${each.title}">
+                <div class="card-body">
+                    <h2 class="card-title">${each.title}</h2>
+                    <p class="card-text">$${each.price}</p>
+                    <a href="#" class="btn btn-primary">More details...</a>
+                </div>
+            </div>
+        `
+        ).join("")
+        document.querySelector("#products").innerHTML = template
+    })
+    document.querySelector("#btnRegister").addEventListener("click", (event)=>{
+        const title = document.querySelector("#title").value
+        const category = document.querySelector("#category").value
+        const photo = document.querySelector("#photo").value
+        const price = document.querySelector("#price").value
+        const stock = document.querySelector("#stock").value
+        socket.emit("register", {title, category, photo, price, stock})
+    })
+</script>

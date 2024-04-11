@@ -1,0 +1,11 @@
+{{#if user.id}}
+    <div class="text-center">
+        <h1 class="text-center bg-danger text-light p-3">DETAILS OF USER:</h1>
+        <h2 class="">{{user.email}}</h2>
+        <img class="w-25 rounded-4" src="{{user.photo}}" alt="{{user.id}}">
+        <p class="fw-bolder">ROL: {{user.role}}</p>
+        <p class="text-primary">User id: {{user.id}}</p>
+    </div>
+{{else}}
+  <h2>USER NOT FOUND</h2>
+{{/if}}

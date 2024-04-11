@@ -1,0 +1,11 @@
+<h1 class="text-center bg-danger text-light p-3">USERS</h1>
+<div class="d-flex flex-wrap m-2 text-center justify-content-center">
+    {{#each users}}
+        <a class="m-5 w-25 bg-dark rounded-4 bg-success p-2 text-decoration-none" href="/users/{{this.id}}">
+            <h3 class="text-white text-center">{{this.email}}</h3>
+            <img class="w-75 p-2 rounded-4" src="{{this.photo}}" alt="{{this.id}}">
+            <p>pass: {{this.password}}</p>
+            <p>user ID: {{this.id}}</p>
+        </a>
+    {{/each}}
+</div>
