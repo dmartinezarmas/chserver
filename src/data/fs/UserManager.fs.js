@@ -70,12 +70,6 @@ class UsersManager {
       let usuarios = await fs.promises.readFile(this.ruta, "utf-8");
       usuarios = JSON.parse(usuarios);
       let filtered = usuarios.find((each) => each.id === id);
-      if (!filtered) {
-        throw new Error("User not found");
-      } else {
-        console.log("The user is:");
-        console.log(filtered);
-      }
       return filtered;
     } catch (error) {
       throw error;

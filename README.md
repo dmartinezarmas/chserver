@@ -1,4 +1,9 @@
 # chserver
+
+SPRINT_4 - Quinta entrega curso BackEnd:
+Se crean las vistas y rutas con HB para usuarios, cada usuario, registro de usuario (no funcional), productos, cada producto, la vista REAL con todos los productos actuales y un registro funcional que se actualiza en linea. Tambien una vista estática para el index.
+Se configuran errores.
+
 Challenge 1 - Cuarta entrega curso BackEnd:
 Se configura servidor express y enrutador y rutas especificas para usuarios y productos.
 Se crea metodo update y se configuran respuestas json para la configuración del API REST.

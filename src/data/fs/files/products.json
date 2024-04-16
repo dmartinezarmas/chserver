@@ -1,8 +1,8 @@
 [
   {
     "id": "2bd76e8432a4151b3177zdf4",
-    "title": "Smartphone moto E1",
-    "photo": "MotoE1.jpeg",
+    "title": "Smartphone Moto E1",
+    "photo": "https://stylewatch.vtexassets.com/arquivos/ids/240775-800-800?v=638319416298200000&width=800&height=800&aspect=true",
     "category": "tecno",
     "price": "1900",
     "stock": "12"
@@ -10,7 +10,7 @@
   {
     "id": "2bd76e8432a4151b3177iuf1",
     "title": "Smartphone HTC Black X",
-    "photo": "HTCBlackX.jpeg",
+    "photo": "https://m.media-amazon.com/images/I/61oAnIYKPVL._AC_SL1500_.jpg",
     "category": "tecno",
     "price": "3000",
     "stock": "8"
@@ -18,7 +18,7 @@
   {
     "id": "2bd76e8432a4151b3177cdx5",
     "title": "Smartphone HTC Black A",
-    "photo": "HTCBlackA.jpeg",
+    "photo": "https://i.ebayimg.com/images/g/XqQAAOSwZbJkAUnm/s-l400.jpg",
     "category": "tecno",
     "price": "2500",
     "stock": "10"
@@ -26,7 +26,7 @@
   {
     "id": "2bd90e8432a4151b3177cdf1",
     "title": "Smartphone Samsung Galaxy mil",
-    "photo": "GalaxyMil.jpeg",
+    "photo": "https://i.blogs.es/e91296/galaxy/original.webp",
     "category": "tecno",
     "price": "5000",
     "stock": "50"
@@ -34,7 +34,7 @@
   {
     "id": "2bd76e8432a4151b3177atf1",
     "title": "Smartphone BGH Beta 3",
-    "photo": "BGHBeta3.jpeg",
+    "photo": "https://m.media-amazon.com/images/I/61qJX973fRL._AC_UF894,1000_QL80_.jpg",
     "category": "tecno",
     "price": "1200",
     "stock": "125"
@@ -42,7 +42,7 @@
   {
     "id": "2bd76e8432a4151b3177cdf1",
     "title": "Smartphone moto G30",
-    "photo": "Moto.jpeg",
+    "photo": "https://img.global.news.samsung.com/cl/wp-content/uploads/2022/07/Pantalla-Dividida-1.png",
     "category": "tecno",
     "price": "3500",
     "stock": "12"
@@ -58,7 +58,7 @@
   {
     "id": "7dd2bb4b4b0cc0b6d4c14175",
     "title": "Tablet Samsung 10pulg",
-    "photo": "tablet10.png",
+    "photo": "https://m.media-amazon.com/images/I/71fKxd1tnwL.jpg",
     "category": "tecno",
     "price": "600",
     "stock": "12"
@@ -106,7 +106,7 @@
   {
     "id": "292c8eb93a523d8b0bb4ae53",
     "title": "Cortinas premium",
-    "photo": "https://st2.depositphotos.com/1007168/6106/v/450/depositphotos_61069335-stock-illustration-grey-magnifying-glass.jpg",
+    "photo": "https://acdn.mitiendanube.com/stores/157/089/products/grandebasic1-4658c2a192bbbdf59e16580785488073-1024-1024.jpg",
     "category": "blancos",
     "price": "150",
     "stock": "19"
@@ -114,7 +114,7 @@
   {
     "id": "292c8eb93a523d8b0bz4ee03",
     "title": "Cubrecamas queen size",
-    "photo": "https://st2.depositphotos.com/1007168/6106/v/450/depositphotos_61069335-stock-illustration-grey-magnifying-glass.jpg",
+    "photo": "https://http2.mlstatic.com/D_NQ_NP_960320-MLA50640492072_072022-O.webp",
     "category": "blancos",
     "price": "190",
     "stock": "14"
@@ -122,7 +122,7 @@
   {
     "id": "292c8eb93q523d8b0bb4ee03",
     "title": "Cubrecamas twin size",
-    "photo": "https://st2.depositphotos.com/1007168/6106/v/450/depositphotos_61069335-stock-illustration-grey-magnifying-glass.jpg",
+    "photo": "https://www.wstore.com.ar/home/wp-content/uploads/2021/02/acolchado-bosque-encantado-scaled.jpg",
     "category": "blancos",
     "price": "182",
     "stock": "16"
@@ -130,7 +130,7 @@
   {
     "id": "292c8eb93a523x8b0bb4ee03",
     "title": "Cubremacas King size",
-    "photo": "https://st2.depositphotos.com/1007168/6106/v/450/depositphotos_61069335-stock-illustration-grey-magnifying-glass.jpg",
+    "photo": "https://http2.mlstatic.com/D_NQ_NP_960320-MLA50640492072_072022-O.webp",
     "category": "blancos",
     "price": "198",
     "stock": "14"
@@ -138,7 +138,7 @@
   {
     "id": "ad56cc8a01b08ce17d28ff22",
     "title": "Smartphone TCL P200",
-    "photo": "tcl_p200.png",
+    "photo": "https://multipoint.com.ar/Image/0/750_750-SM-X200NZAMARO-1.PNG",
     "category": "tecno",
     "price": "1500",
     "stock": "30"
@@ -146,7 +146,7 @@
   {
     "id": "ea8aca43463e8addb68ac90c",
     "title": "Smartphone BGH alpha5",
-    "photo": "bgh_alpha5.png",
+    "photo": "https://arbghprod.vtexassets.com/arquivos/ids/162905-800-auto?v=638242506392430000&width=800&height=auto&aspect=true",
     "category": "tecno",
     "price": "1300",
     "stock": "50"
@@ -154,7 +154,7 @@
   {
     "id": "5a75771bafe91ec72ced63bd",
     "title": "Balanza de baño smart BGH",
-    "photo": "bgh_balanza.png",
+    "photo": "https://st2.depositphotos.com/1007168/6106/v/450/depositphotos_61069335-stock-illustration-grey-magnifying-glass.jpg",
     "category": "fashion",
     "price": "380",
     "stock": "8"
@@ -162,7 +162,7 @@
   {
     "id": "31f31b92112a943d5a766821",
     "title": "Rizador de pelo GAMMA",
-    "photo": "gamma_rizador.png",
+    "photo": "https://st2.depositphotos.com/1007168/6106/v/450/depositphotos_61069335-stock-illustration-grey-magnifying-glass.jpg",
     "category": "fashion",
     "price": "580",
     "stock": "5"
@@ -170,7 +170,7 @@
   {
     "id": "ef54823f9bc3fe68bce380b8",
     "title": "Reloj despertador LED",
-    "photo": "relojLed.png",
+    "photo": "https://st2.depositphotos.com/1007168/6106/v/450/depositphotos_61069335-stock-illustration-grey-magnifying-glass.jpg",
     "category": "tecno",
     "price": "85",
     "stock": "2"
@@ -178,7 +178,7 @@
   {
     "id": "3adaf77c76164c5b6683761d",
     "title": "Smartwatch AlphaOne",
-    "photo": "smartwatch.png",
+    "photo": "https://patiosdecafayate.com.ar/wp-content/uploads/2023/08/el-mejor-smartphone-actual-y-todas-sus-increibles-caracteristicas-1.jpg",
     "category": "tecno",
     "price": "129",
     "stock": "9"
@@ -186,7 +186,7 @@
   {
     "id": "3qdaf77c76164c5b6683761a",
     "title": "Smartwatch AlphaTwo",
-    "photo": "smartwatchTwo.png",
+    "photo": "https://www.ideahogar.com.ar/9151-large_default/reloj-smartwatch-m5-doble-malla.jpg",
     "category": "tecno",
     "price": "135",
     "stock": "4"
@@ -194,7 +194,7 @@
   {
     "id": "3pdaf77c76164c5b6683761b",
     "title": "Smartwatch AlphaFour",
-    "photo": "smartwatchFour.png",
+    "photo": "https://www.digital-storeweb.com.ar/wp-content/uploads/sites/18/2020/02/B57.jpg",
     "category": "tecno",
     "price": "145",
     "stock": "5"
@@ -202,7 +202,7 @@
   {
     "id": "3odaf77c76164c5b6683761c",
     "title": "Smartwatch AlphaFive",
-    "photo": "smartwatchFive.png",
+    "photo": "https://www.lanacion.com.ar/resizer/v2/el-galaxy-watch5-pro-tiene-una-caja-de-titanio-de-P2HHKXMUVBAF3GUA6AI752Y6II.jpg?auth=f0a73de728c409b706e40cf783552c3125df63a593b90f66a09ffda2ca38a0e6&width=420&height=280&quality=70&smart=true",
     "category": "tecno",
     "price": "150",
     "stock": "4"
@@ -210,7 +210,7 @@
   {
     "id": "3ndaf77c76164c5b6683761d",
     "title": "Smartwatch AlphaSix",
-    "photo": "smartwatchSix.png",
+    "photo": "https://newage.mx/wp-content/uploads/2022/09/S9ce9b7fbf72d43268ef1d0c7ab1b9b47Y.jpg",
     "category": "tecno",
     "price": "152",
     "stock": "9"
@@ -218,7 +218,7 @@
   {
     "id": "3mdaf77c76164c5b6683761e",
     "title": "Smartwatch AlphaSeven",
-    "photo": "smartwatchSeven.png",
+    "photo": "https://newage.mx/wp-content/uploads/2022/09/S9ce9b7fbf72d43268ef1d0c7ab1b9b47Y.jpg",
     "category": "tecno",
     "price": "158",
     "stock": "6"
@@ -226,7 +226,7 @@
   {
     "id": "3ldaf77c76164c5b6683761f",
     "title": "Smartwatch Neo A",
-    "photo": "smartwatchNeoA.png",
+    "photo": "https://acdn.mitiendanube.com/stores/001/085/544/products/smartwatch-dt2-91-92ac946130428fcc0c16692121376758-240-0.jpg",
     "category": "tecno",
     "price": "40",
     "stock": "29"
@@ -234,7 +234,7 @@
   {
     "id": "3kdaf77c76164c5b6683761g",
     "title": "Smartwatch Neo B",
-    "photo": "smartwatchNeoB.png",
+    "photo": "https://acdn.mitiendanube.com/stores/001/085/544/products/smartwatch-dt2-91-92ac946130428fcc0c16692121376758-240-0.jpg",
     "category": "tecno",
     "price": "49",
     "stock": "30"
@@ -242,7 +242,7 @@
   {
     "id": "3jdaf77c76164c5b6683761h",
     "title": "Smartwatch Neo C",
-    "photo": "smartwatch.png",
+    "photo": "https://ae01.alicdn.com/kf/Sc8d4c2d776ae486f9f8a1665f838c596i.jpg_640x640Q90.jpg_.webp",
     "category": "tecno",
     "price": "55",
     "stock": "42"
@@ -250,7 +250,7 @@
   {
     "id": "3idaf77c76164c5b6683761i",
     "title": "Smartwatch Neo D",
-    "photo": "smartwatchNeoD.png",
+    "photo": "https://acdn.mitiendanube.com/stores/001/085/544/products/smartwatch-dt2-91-92ac946130428fcc0c16692121376758-240-0.jpg",
     "category": "tecno",
     "price": "45",
     "stock": "89"
@@ -258,7 +258,7 @@
   {
     "id": "3hdaf77c76164c5b6683761j",
     "title": "Smartwatch Neo Z",
-    "photo": "smartwatchNeoZ.png",
+    "photo": "https://ae01.alicdn.com/kf/Sc8d4c2d776ae486f9f8a1665f838c596i.jpg_640x640Q90.jpg_.webp",
     "category": "tecno",
     "price": "99",
     "stock": "95"
@@ -266,7 +266,7 @@
   {
     "id": "9bcf18a44005cc533c98g81e",
     "title": "Sábanas microfibra Queen blue",
-    "photo": "https://st2.depositphotos.com/1007168/6106/v/450/depositphotos_61069335-stock-illustration-grey-magnifying-glass.jpg",
+    "photo": "https://www.tiendaimco.com.ar/media/catalog/product/cache/4e187a3216125186f353d1ef896e6af4/6/0/600292_img65963b9c7eb883.61184682_2024-01-04_02_00_08.jpg",
     "category": "blancos",
     "price": "80",
     "stock": "100"
@@ -274,7 +274,7 @@
   {
     "id": "3gdaf77c76164c5b6683761k",
     "title": "Sábanas microfibra Queen green",
-    "photo": "https://st2.depositphotos.com/1007168/6106/v/450/depositphotos_61069335-stock-illustration-grey-magnifying-glass.jpg",
+    "photo": "https://dcdn.mitiendanube.com/stores/968/455/products/sabanas-guale-brescia-blancodeco11-36fcfebb131041a0a616790026244890-1024-1024.jpg",
     "category": "blancos",
     "price": "80",
     "stock": "100"
@@ -282,7 +282,7 @@
   {
     "id": "3fdaf77c76164c5b6683761l",
     "title": "Sábanas microfibra Queen red",
-    "photo": "https://st2.depositphotos.com/1007168/6106/v/450/depositphotos_61069335-stock-illustration-grey-magnifying-glass.jpg",
+    "photo": "https://dcdn.mitiendanube.com/stores/002/976/086/products/juego-de-sabanas-modelo-geka-gris-y-mostaza1-73a273b323f4b5e74416830534408512-1024-1024.jpg",
     "category": "blancos",
     "price": "80",
     "stock": "100"
@@ -298,7 +298,7 @@
   {
     "id": "3ddaf77c76164c5b6683761n",
     "title": "Sábanas microfibra Queen pink",
-    "photo": "https://st2.depositphotos.com/1007168/6106/v/450/depositphotos_61069335-stock-illustration-grey-magnifying-glass.jpg",
+    "photo": "https://arredo.vtexassets.com/arquivos/ids/768470-800-auto?v=638381726879970000&width=800&height=auto&aspect=true",
     "category": "blancos",
     "price": "80",
     "stock": "110"
@@ -314,7 +314,7 @@
   {
     "id": "3bdaf77c76164c5b6683761p",
     "title": "Sábanas microfibra Queen black",
-    "photo": "https://st2.depositphotos.com/1007168/6106/v/450/depositphotos_61069335-stock-illustration-grey-magnifying-glass.jpg",
+    "photo": "https://acdn.mitiendanube.com/stores/001/241/075/products/colors-144h-blanco-a1-1364e7d585d2cae1cb16861676707836-1024-1024.png",
     "category": "blancos",
     "price": "80",
     "stock": "180"
@@ -322,9 +322,49 @@
   {
     "id": "bdb4f50e4844bfeba194aa0f",
     "title": "Sábanas microfibra Queen purple",
-    "photo": "https://st2.depositphotos.com/1007168/6106/v/450/depositphotos_61069335-stock-illustration-grey-magnifying-glass.jpg",
+    "photo": "https://www.casadepedro.com.ar/26463-large_default/juego-de-s%C3%A1banas-2-plazas-180-hilos-estampadas.jpg",
     "category": "blancos",
     "price": "80",
+    "stock": "1"
+  },
+  {
+    "id": "fcf8f60ea4d516921993e9d8",
+    "title": "peine",
+    "photo": "https://st2.depositphotos.com/1007168/6106/v/450/depositphotos_61069335-stock-illustration-grey-magnifying-glass.jpg",
+    "category": "fashion",
+    "price": "20",
+    "stock": "1"
+  },
+  {
+    "id": "46c59fa27f4ff5b1a27de85e",
+    "title": "peine 2",
+    "photo": "https://st2.depositphotos.com/1007168/6106/v/450/depositphotos_61069335-stock-illustration-grey-magnifying-glass.jpg",
+    "category": "fashion",
+    "price": "20",
+    "stock": "1"
+  },
+  {
+    "id": "e7dee77ec24332913ec1ba02",
+    "title": "Sabanas importadas",
+    "photo": "https://arredo.vtexassets.com/assets/vtex.file-manager-graphql/images/89d60ea3-0cfc-4a84-afd2-4767b1dc4a85___a98a3a59747c3f0d6971fee05f8970dc.jpg",
+    "category": "blancos",
+    "price": "100",
+    "stock": "1"
+  },
+  {
+    "id": "b98728b72fe1e1961c54db07",
+    "title": "Tablet Sony T1000",
+    "photo": "https://s.libertaddigital.com/2021/11/10/tablet-apple-ipad-air-4a-generacion.jpg",
+    "category": "tecno",
+    "price": "2500",
+    "stock": "2"
+  },
+  {
+    "id": "41d5b4485e5c0cc4edbe190d",
+    "title": "Tablet LG Mi Au",
+    "photo": "https://media.wired.com/photos/5bd397cdc09dee5cbd062e90/191:100/w_2580,c_limit/amazonfirekids.jpg",
+    "category": "tecno",
+    "price": "3000",
     "stock": "1"
   }
 ]

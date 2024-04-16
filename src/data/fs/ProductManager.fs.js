@@ -71,12 +71,6 @@ class ProductsManager {
       let productos = await fs.promises.readFile(this.ruta, "utf-8");
       productos = JSON.parse(productos);
       let filtered = productos.find((each) => each.id === id);
-      if (!filtered) {
-        throw new Error("Product not found");
-      } else {
-        console.log("The product is:");
-        console.log(filtered);
-      }
       return filtered;
     } catch (error) {
       throw error;

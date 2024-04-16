@@ -1,0 +1,13 @@
+{{#if product.id}}
+    <div class="text-center">
+        <h1 class="mb-3 text-center bg-danger text-light p-3">DETAILS OF PRODUCT:</h1>
+        <h2 class="">{{product.title}}</h2>
+        <img class="w-25" src="{{product.photo}}" alt="{{product.title}}">
+        <p class="fw-bolder">${{product.price}}</p>
+        <p>Stock: {{product.stock}} unid</p>
+        <p class="text-warning">Product id: {{product.id}}</p>
+        <p class="fw-semibold">Category: {{product.category}}</p>
+    </div>
+{{else}}
+  <h2>PRODUCT NOT FOUND</h2>
+{{/if}}
