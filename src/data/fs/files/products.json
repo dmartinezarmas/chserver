@@ -366,5 +366,13 @@
     "category": "tecno",
     "price": "3000",
     "stock": "1"
+  },
+  {
+    "id": "c7d9e7854cacfc624f325e4d",
+    "title": "Microfono LED",
+    "photo": "https://basic-tutorials.com/wp-content/uploads/2020/10/hx-product-quadcast-s-3-zm-lg.jpg",
+    "category": "tecno",
+    "price": "122",
+    "stock": "5"
   }
 ]
