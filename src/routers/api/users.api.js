@@ -1,5 +1,7 @@
 import { Router } from "express";
-import usersManager from "../../data/fs/UserManager.fs.js";
+// import usersManager from "../../data/fs/UserManager.fs.js";
+import usersManager from "../../data/mongo/UsersManager.mongo.js";
+import uploader from "../../middlewares/multer.mid.js";
 
 const usersRouter = Router();
 
@@ -18,7 +20,7 @@ const createUser = async (req, res, next) => {
     return next (error)
   }
 };
-usersRouter.post("/", createUser);
+usersRouter.post("/", uploader.single("photo"), createUser);
 
 // leer todos los usuarios y filtrar por role
 const readUsers = async (req, res, next) => {
@@ -77,7 +79,7 @@ const updateUser = async (req, res, next) => {
     return next (error)
   }
 };
-usersRouter.put("/:uid", updateUser);
+usersRouter.put("/:uid", uploader.single("photo"), updateUser);
 
 // eliminar usuario
 const destroyUser = async (req, res, next) => {
