@@ -24,13 +24,30 @@ productsRouter.post("/", createProduct);
 // leer todos los productos y filtrar por category
 async function readProducts(req, res, next) {
   try {
-    const { category } = req.query;
-    const all = await productsManager.read(category);
-    if (all.length !== 0) {
-      return res.status(200).json({
-        response: all,
-        category,
-        success: true,
+    // const { category } = req.query;
+    const filter = {};
+    const opts = {};
+    if(req.query.limit){
+      opts.limit = req.query.limit
+    }
+    if(req.query.page){
+      opts.page = req.query.page
+    }
+    if(req.query.user_id){
+      filter.user_id = req.query.user_id
+    }
+    const all = await productsManager.paginate({filter, opts});
+    if (all.length != 0) {
+      return res.json({
+        statusCode: 200,
+        response: all.docs,
+        info:{
+          page: all.page,
+          totalPage: all.totalPage,
+          limit: all.limit,
+          prevPage: all.prevPage,
+          nextPage: all.NextPage, 
+        }     
       });
     } else {
       const error = new Error("Not found, not products");
@@ -42,6 +59,39 @@ async function readProducts(req, res, next) {
   }
 }
 productsRouter.get("/", readProducts);
+
+// paginar los productos y filtrar por category
+async function paginate(req, res, next) {
+  try {
+    const filter = {};
+    const opts = {};
+    if(req.query.limit){
+      opts.limit = req.query.limit
+    }
+    if(req.query.page){
+      opts.page = req.query.page
+    }
+    if(req.query.product_id){
+      filter.product_id = req.query.product_id
+    }
+    console.log(filter);
+    const all = await productsManager.paginate({filter, opts});
+    return res.json({
+      statusCode: 200,
+      response: all.docs,
+      info:{
+        page: all.page,
+        totalPage: all.totalPage,
+        limit: all.limit,
+        prevPage: all.prevPage,
+        nextPage: all.NextPage,
+      }
+    });
+  } catch (error) {
+    return next(error);
+  }
+}
+productsRouter.get("/paginate", paginate);
 
 // buscar y leer productos por ID
 async function readOneProduct(req, res, next) {

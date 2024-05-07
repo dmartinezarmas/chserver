@@ -1,5 +1,6 @@
 import { Router } from "express";
-import productsManager from "../../data/fs/ProductManager.fs.js";
+// import productsManager from "../../data/fs/ProductManager.fs.js";
+import productsManager from "../../data/mongo/ProductsManager.mongo.js";
 
 const productsViewRouter = Router();
 productsViewRouter.get("/", async(req, res, next) => {
@@ -7,7 +8,7 @@ productsViewRouter.get("/", async(req, res, next) => {
         const products = await productsManager.read()
         return res.render("products", { products })
     } catch (error) {
-        return (next)
+        return next (error)
     }
 })
 productsViewRouter.get("/real", async(req, res, next) => {

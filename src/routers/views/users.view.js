@@ -17,6 +17,13 @@ usersViewRouter.get("/register", async(req, res, next) => {
         return (next)
     }
 })
+usersViewRouter.get("/login", async(req, res, next) => {
+    try {
+        return res.render("login", { title: "LOGIN" })
+    } catch (error) {
+        return (next)
+    }
+})
 usersViewRouter.get("/:uid", async(req, res, next) => {
     try {
         const {uid} = req.params
