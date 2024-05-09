@@ -2,8 +2,13 @@ import { Router } from "express";
 // import productsManager from "../../data/fs/ProductManager.fs.js";
 import productsManager from "../../data/mongo/ProductsManager.mongo.js";
 
+function prueba(req, res, next) {
+    console.log("prueba");
+    next()
+  }
+  
 const productsViewRouter = Router();
-productsViewRouter.get("/", async(req, res, next) => {
+productsViewRouter.get("/", prueba, async(req, res, next) => {
     try {
         const products = await productsManager.read()
         return res.render("products", { products })

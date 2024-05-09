@@ -10,17 +10,18 @@ class Manager {
       throw error;
     }
   }
-  async read({ filter, opts }) {
+  async read(category) {
     try {
-      const all = await this.Model.paginate(filter, opts).lean();
+      const all = await this.Model.read(category);
       return all;
     } catch (error) {
       throw error;
     }
   }
   async paginate({ filter, opts }) {
+    console.log({filter});
     try {
-      const all = await this.Model.paginate(filter, opts);
+      const all = await this.Model.paginate(filter, opts).lean();
       return all;
     } catch (error) {
       throw error;

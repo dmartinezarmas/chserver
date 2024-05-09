@@ -20,9 +20,13 @@ async function createProduct(req, res, next) {
   }
 }
 productsRouter.post("/", createProduct);
-
+function prueba(req, res, next) {
+  console.log("prueba");
+  next()
+}
 // leer todos los productos y filtrar por category
 async function readProducts(req, res, next) {
+  console.log("read Products");
   try {
     // const { category } = req.query;
     const filter = {};
@@ -36,7 +40,9 @@ async function readProducts(req, res, next) {
     if(req.query.user_id){
       filter.user_id = req.query.user_id
     }
-    const all = await productsManager.paginate({filter, opts});
+    console.log("products manager");
+    console.log(productsManager);
+    const all = await productsManager.read();
     if (all.length != 0) {
       return res.json({
         statusCode: 200,
@@ -58,7 +64,7 @@ async function readProducts(req, res, next) {
     return next(error);
   }
 }
-productsRouter.get("/", readProducts);
+productsRouter.get("/", prueba,readProducts);
 
 // paginar los productos y filtrar por category
 async function paginate(req, res, next) {
