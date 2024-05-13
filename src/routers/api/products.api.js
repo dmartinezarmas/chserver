@@ -1,5 +1,6 @@
 import { Router } from "express";
-import productsManager from "../../data/fs/ProductManager.fs.js";
+// import productsManager from "../../data/fs/ProductManager.fs.js";
+import productsManager from "../../data/mongo/ProductsManager.mongo.js";
 
 const productsRouter = Router();
 
@@ -24,12 +25,11 @@ productsRouter.post("/", createProduct);
 async function readProducts(req, res, next) {
   try {
     const { category } = req.query;
-    const all = await productsManager.read(category);
-    if (all.length !== 0) {
-      return res.status(200).json({
-        response: all,
-        category,
-        success: true,
+    const all = await productsManager.read({category});
+    if (all.length != 0) {
+      return res.json({
+        statusCode: 200,
+        response: all
       });
     } else {
       const error = new Error("Not found, not products");
@@ -40,7 +40,39 @@ async function readProducts(req, res, next) {
     return next(error);
   }
 }
-productsRouter.get("/", readProducts);
+productsRouter.get("/",readProducts);
+
+// paginar los productos y filtrar por category
+async function paginate(req, res, next) {
+  try {
+    const filter = {};
+    const opts = {};
+    if(req.query.limit){
+      opts.limit = req.query.limit
+    }
+    if(req.query.page){
+      opts.page = req.query.page
+    }
+    if(req.query.category){
+      filter.category = req.query.category
+    }
+    const all = await productsManager.paginate({filter, opts});
+    return res.json({
+      statusCode: 200,
+      response: all.docs,
+      info:{
+        page: all.page,
+        totalPage: all.totalPage,
+        limit: all.limit,
+        prevPage: all.prevPage,
+        nextPage: all.NextPage,
+      }
+    });
+  } catch (error) {
+    return next(error);
+  }
+}
+productsRouter.get("/paginate", paginate);
 
 // buscar y leer productos por ID
 async function readOneProduct(req, res, next) {

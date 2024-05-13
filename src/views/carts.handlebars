@@ -1,0 +1,61 @@
+{{#if cart}}
+    <div class="text-center">
+        <h1 class="mb-3 text-center bg-danger text-light p-3">DETAILS OF CART:</h1>
+        <section>
+          <table class="table">
+              <thead>
+                  <tr>
+                      <th>Photo</th>
+                      <th>User Id</th>
+                      <th>User Email</th>
+                      <th>Product</th>
+                      <th>Quantity</th>
+                      <th>Unit Price</th>
+
+                      <th>Status</th>
+                      <th>Action</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  {{#each cart}}
+                  <tr>
+                      <td><img src="{{this.product_id.photo}}" alt="Product Photo" style="max-width: 50px; max-height: 50px;"></td>
+                      <td>{{this.user_id._id}}</td>
+                      <td>{{this.user_id.email}}</td>
+                      <td>{{this.product_id.title}}</td>
+                      <td>{{this.quantity}}</td>
+                      <td>{{this.product_id.price}}</td>
+
+                      <td>{{this.state}}</td>
+                      <td><button type="button" class="btn btn-warning" onclick="deleteCartItem('{{this._id}}')">Delete</button></td>
+                  </tr>
+                  {{/each}}
+              </tbody>
+          </table>
+        </section>
+        <a href="#" onclick="addToCart('{{cart.product_id}}')">ADD</a>
+    </div>
+{{else}}
+  <h2>PRODUCT NOT FOUND</h2>
+{{/if}}
+<script>
+    function deleteCartItem(cartId) {
+        fetch('/deleteCartItem', {
+            method: 'DELETE',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                cartId: cartId
+            })
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network failed');
+            }
+        })
+        .catch(error => {
+            console.error('There has been a problem with your fetch operation:', error);
+        });
+    }
+</script>
