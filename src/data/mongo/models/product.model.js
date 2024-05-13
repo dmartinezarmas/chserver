@@ -22,9 +22,9 @@ const schema = new Schema(
     timestamps: true,
   }
 );
-schema.pre("find", function () {
-  this.populate("user_id", "email role");
-});
+// schema.pre("find", function () {
+//   this.populate("user_id", "email role");
+// });
 schema.plugin(mongoosePaginate);
 const Product = model(collection, schema);
 export default Product;

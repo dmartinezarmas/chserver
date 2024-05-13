@@ -12,16 +12,16 @@ class Manager {
   }
   async read(category) {
     try {
-      const all = await this.Model.read(category);
+      const all = await this.Model.find(category).lean();
+      console.log(all);
       return all;
     } catch (error) {
       throw error;
     }
   }
   async paginate({ filter, opts }) {
-    console.log({filter});
     try {
-      const all = await this.Model.paginate(filter, opts).lean();
+      let all = await this.Model.paginate(filter, opts);
       return all;
     } catch (error) {
       throw error;
