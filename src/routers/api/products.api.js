@@ -25,7 +25,7 @@ productsRouter.post("/", createProduct);
 async function readProducts(req, res, next) {
   try {
     const { category } = req.query;
-    const all = await productsManager.read({category}).lean();
+    const all = await productsManager.read({category});
     if (all.length != 0) {
       return res.json({
         statusCode: 200,

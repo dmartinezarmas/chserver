@@ -24,7 +24,7 @@ productsViewRouter.get("/paginate", async(req, res, next) => {
         const opts = {};
         if(req.query.limit){
           opts.limit = req.query.limit
-        }
+        } else {opts.limit = 6}
         if(req.query.page){
           opts.page = req.query.page
         }
@@ -33,12 +33,13 @@ productsViewRouter.get("/paginate", async(req, res, next) => {
         }
         const allProducts = await productsManager.paginate({filter, opts})
         const products = allProducts.docs.map((doc) => doc.toObject());
-  
         const prevPageLink = allProducts.prevPage ? `/products/paginate?page=${allProducts.prevPage}` : null;
         const nextPageLink = allProducts.nextPage ? `/products/paginate?page=${allProducts.nextPage}` : null;
-        console.log(allProducts);
-        console.log(nextPageLink);
-        return res.render("products", { products, prevPageLink, nextPageLink});
+        return res.render("products", {
+            products,
+            prevPageLink,
+            nextPageLink
+          });
     } catch (error) {
         return next (error)
     }
@@ -54,10 +55,14 @@ productsViewRouter.get("/real", async(req, res, next) => {
 productsViewRouter.get("/:pid", async(req, res, next) => {
     try {
         const {pid} = req.params
-        const one = await productsManager.readOne(pid)
-        return res.render("productDetails", {product: one})
+        const product = await productsManager.readOne(pid)
+        console.log(product);
+        const one = product.toObject()
+        const idString = one._id.toHexString()
+        return res.render("productDetails", {product: one, idString})
     } catch (error) {
         return (next)
     }
 })
+
 export default productsViewRouter;

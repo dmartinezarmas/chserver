@@ -57,10 +57,10 @@ cartsRouter.put("/:uid", async (req, res, next) => {
     }
 })
 // BORRAR CARRITO
-cartsRouter.delete("/:uid", async (req, res, next) => {
+cartsRouter.delete("/:cid", async (req, res, next) => {
     try {
-      const { uid } = req.params;
-      const one = await cartsManager.destroyOne(uid);
+      const { cid } = req.params;
+      const one = await cartsManager.destroyOne(cid);
       return res.json({
         statusCode: 200,
         response: one,
